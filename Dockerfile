@@ -1,6 +1,7 @@
-FROM ruby:2.5
+FROM ruby:2.7
 
-RUN apt update && apt install nodejs -y
+RUN apt update && apt install build-essential nodejs -y
+
 RUN mkdir /app
 WORKDIR /app
 
