@@ -1,6 +1,6 @@
-FROM ruby:2.7
+FROM ruby:alpine
 
-RUN apt update && apt install build-essential nodejs -y
+RUN apk add --update npm g++ make tzdata
 
 RUN mkdir /app
 WORKDIR /app
