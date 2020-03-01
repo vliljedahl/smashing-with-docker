@@ -1,0 +1,9 @@
+version: '2'
+services:
+    web:
+        build: .
+        command: smashing start
+        volumes:
+            - .:/app
+        ports: 
+            - "3030:3030"
